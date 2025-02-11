@@ -34,7 +34,7 @@ const CartItem = ({ item }) => {
         </div>
         <div className="flex w-[20%] flex-col gap-8">
           <p>
-            £
+            Rs.
             {(
               parseFloat(item.price.replace(/[^\d.-]/g, "")) * item.quantity
             ).toFixed(2)}

@@ -137,7 +137,7 @@ const Payment = () => {
             <div>
               <p className="font-semibold">
                 {" "}
-                {`£${cart.reduce((acc, curr) => {
+                {`Rs.${cart.reduce((acc, curr) => {
                   const price = parseFloat(curr.price.replace(/[^\d.-]/g, ""));
                   return acc + price * curr.quantity;
                 }, 0)}`}
