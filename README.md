@@ -1,8 +1,8 @@
-# React + Vite
+eCommerce App - Shoe Store
+A responsive eCommerce app built with React.js and Tailwind CSS for browsing and purchasing shoes.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features:
+Product Browsing: Browse a wide selection of shoes.
+Filters: Filter shoes by search, brands, and price range.
+Cart Management: Utilize Redux for managing the cart state.
+Order Tracking: Orders are saved and tracked via Google Sheets
