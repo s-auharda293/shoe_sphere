@@ -27,8 +27,6 @@ const Payment = () => {
     setDisabled(true);
     e.preventDefault();
     try {
-      const formData = new FormData();
-
       if (!orderData) {
         toast.error("Cart is empty or contact information isn't filled!", {
           position: "bottom-right",
@@ -43,8 +41,10 @@ const Payment = () => {
         return;
       }
       let message;
+      console.log(orderData.cart);
 
       for (const item of orderData.cart) {
+        const formData = new FormData();
         formData.append("name", orderData.name);
         formData.append("emailAddress", orderData.emailAddress);
         formData.append("phoneNumber", orderData.phoneNumber);
