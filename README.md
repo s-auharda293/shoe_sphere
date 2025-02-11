@@ -1,4 +1,4 @@
-eCommerce App - Shoe Store
+eCommerce App - Shoe Sohere
 A responsive eCommerce app built with React.js and Tailwind CSS for browsing and purchasing shoes.
 
 Features:

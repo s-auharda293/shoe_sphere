@@ -36,7 +36,7 @@ const CartItem = ({ item }) => {
           <p>
             Rs.
             {(
-              parseFloat(item.price.replace(/[^\d.-]/g, "")) * item.quantity
+              parseFloat(item.price.replace(/^Rs\.\s*/, "")) * item.quantity
             ).toFixed(2)}
           </p>
 

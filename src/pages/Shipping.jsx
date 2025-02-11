@@ -229,7 +229,7 @@ const Shipping = () => {
               <p className="font-semibold">
                 {" "}
                 {`Rs.${cart.reduce((acc, curr) => {
-                  const price = parseFloat(curr.price.replace(/[^\d.-]/g, ""));
+                  let price = parseFloat(curr.price.replace(/^Rs\.\s*/, ""));
                   return acc + price * curr.quantity;
                 }, 0)}`}
               </p>

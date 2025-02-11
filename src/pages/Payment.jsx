@@ -78,7 +78,7 @@ const Payment = () => {
             draggable: true,
           });
           setDisabled(false);
-          navigate("/products");
+          navigate("/");
         }
       }
       if (message.status === 200) {
@@ -138,7 +138,7 @@ const Payment = () => {
               <p className="font-semibold">
                 {" "}
                 {`Rs.${cart.reduce((acc, curr) => {
-                  const price = parseFloat(curr.price.replace(/[^\d.-]/g, ""));
+                  let price = parseFloat(curr.price.replace(/^Rs\.\s*/, ""));
                   return acc + price * curr.quantity;
                 }, 0)}`}
               </p>
