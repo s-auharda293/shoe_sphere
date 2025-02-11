@@ -67,7 +67,7 @@ const ProductGrid = () => {
 
     if (minPrice !== null && maxPrice !== null) {
       updatedProducts = updatedProducts.filter((product) => {
-        const price = parseFloat(product.price.replace(/[^\d.-]/g, ""));
+        let price = parseFloat(product.price.replace(/^Rs\.\s*/, ""));
         return price >= minPrice && price <= maxPrice;
       });
     }
